@@ -17,7 +17,7 @@ CONTENTS:
 06 Footer
 07 Icons
 08 Buttons
-09 Media queries 
+09 Media queries
 ===========================
 */
 /* Import css */
@@ -91,7 +91,7 @@ a.scrollup {
 a.scrollup:hover,a.scrollup:active,a.scrollup:focus {
 	opacity:1;
 	text-decoration:none;
-	-webkit-transition: all 400ms ease-out 0s;	
+	-webkit-transition: all 400ms ease-out 0s;
 	   -moz-transition: all 400ms ease-out 0s;
 		 -o-transition: all 400ms ease-out 0s;
 		    transition: all 400ms ease-out 0s;
@@ -125,6 +125,10 @@ a.scrollup i:hover {
 .row.nomargin {
 	margin-bottom:0;
 }
+
+/*.breadcrumb {
+	font-size: 5em;
+}*/
 
 
 /*---------- forms ----------*/
@@ -499,14 +503,14 @@ section.spacer.bg2 {
 	background: url(../img/bg/bg-2.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
-	margin:0;	
+	margin:0;
 }
 
 section.spacer.bg3 {
 	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
-	margin:0;	
+	margin:0;
 }
 
 section.spacer blockquote.large:before {
@@ -604,7 +608,7 @@ section.spacer blockquote cite {
 }
 .portfolio-item .portfolio-image img {
 	width: 100%;
-	height: auto;
+	height: 176px;
 }
 .portfolio .portfolio-overlay {
 	width: 100%;
@@ -728,20 +732,20 @@ section.spacer blockquote cite {
 }
 
 
-/* === section services === */
+/* === section trip === */
 
-section#services h2 {
+section#trip h2 {
 	font-size: 22px;
 	margin-bottom: 15px;
 	margin-top: 10px;
 	text-align:center;
 }
-section#services p {
+section#trip {
 	margin:10px;
 }
 
 
-section#services .service-box {
+section#trip .service-box {
 	text-align: center;
 	padding: 20px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -750,17 +754,60 @@ section#services .service-box {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-section#services .span3:hover {
+section#trip .span3:hover {
 	background:#e3e3e3;
 }
 
-section#services .service-box h2 {
+section#trip .service-box h2 {
 	color: #f7f7f7;
 	font-weight: 700;
 }
 
-section#services.section.orange .service-box:hover {
+section#trip .service-box img {
+	height: 172px
+}
+
+section#trip.section.orange .service-box:hover {
 	background:#f36518;
+}
+
+/* === section accommodation === */
+
+section#accommodation h2 {
+	font-size: 22px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	text-align:center;
+}
+section#accommodation p {
+	margin:10px;
+}
+
+/* === section accommodation ===*/
+section#accommodation .service-box {
+	text-align: center;
+	padding: 20px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+section#accommodation .span3:hover {
+	background:#e3e3e3;
+}
+
+section#accommodation .service-box h2 {
+	color: #f7f7f7;
+	font-weight: 700;
+}
+
+section#accommodation.section.orange .service-box:hover {
+	background:#f36518;
+}
+
+section#accommodation .service-box img {
+	height: 172px
 }
 
 
@@ -772,7 +819,7 @@ section#blog {
 
 .home-post {
 	background:#fff;
-	
+
 }
 
 .home-post:hover {
@@ -827,6 +874,26 @@ section#blog {
 	color:#fcfcfc;
 }
 
+.main-content {
+	background:#FFFFE0;
+	/*letter-spacing: 8px; /*ความห่างระหว่างตัวอักษร*/
+	line-height: 25pt;  /*ความห่างระหว่างบรรทัด*/
+
+}
+
+.main-content .entry-content {
+	padding:20px;
+}
+.main-content .entry-content h5 a {
+	font-size:22px;
+}
+.main-content .entry-content h5 a:hover {
+	color:#312f2b;
+	text-decoration:none;
+}
+.main-content .entry-content a.more {
+	font-size:13px;
+}
 
 
 /* === section about === */
@@ -1290,7 +1357,7 @@ i.icon-white {
 /* =========================================================
 08. Buttons
 ============================================================ */
- 
+
 .btn {
 	color: #fff;
 	text-shadow: none;
@@ -1562,6 +1629,92 @@ i.icon-white {
 	height: auto;
 }
 
+/*----*/
+
+.page-header {
+
+  margin: 12px 0 20px;
+
+  border-bottom: none;
+
+  opacity: 0.7;
+
+  text-transform: uppercase;
+
+}
+
+.page-header i {
+
+  color: #acb1b8;
+
+  margin-right: 10px;
+
+  float: left;
+
+  font-size: 30px;
+
+  line-height: 22px;
+
+  opacity: 0.8;
+
+}
+.wrapper {
+
+    display: inline-block;
+
+    margin-top: 60px;
+
+    padding: 15px;
+
+    width: 100%;
+
+}
+.breadcrumb {
+
+  -webkit-border-radius: 0px;
+
+  -moz-border-radius: 0px;
+
+  border-radius: 0px;
+
+  height: 34px;
+
+  position: relative;
+
+  margin: 0 0 19px 0;
+
+  overflow: hidden;
+
+	background-color: #B0E0E6;
+
+	width: 100%
+
+}
+
+.breadcrumb li {
+
+  position: relative;
+
+  margin-right: 0;
+
+	font-size: 20px;
+
+}
+
+.breadcrumb li i {
+
+  Font-size: 20px;
+
+  margin-right: 5px;
+
+}
+
+.breadcrumb > .active {
+
+  color: #d4d4d4;
+
+}
+
 /* =========================================================
 09. Media queries
 ============================================================ */
@@ -1573,28 +1726,28 @@ i.icon-white {
 		padding-right:0;
 		padding:0;
 	}
-	
+
 	.navbar-inner {
 	 padding-right: 20px;
-	 padding-left: 20px;	
+	 padding-left: 20px;
 	}
-	
+
 	.navbar-inner h1.brand {
 		margin-left:20px;
 	}
-	
+
 	.navbar-inner .btn-navbar {
 		margin:20px 20px 0;
 	}
-	
+
 	.container {
 	 padding-right: 20px;
 	 padding-left: 20px;
-	}	
+	}
 	.navbar-inverse .navbar-inner {
 		padding:0 0 30px;
 	}
-	
+
 	.nav-collapse {
 		text-align:center;
 		width:100%;
@@ -1610,25 +1763,25 @@ i.icon-white {
 	}
 	.navbar-inner {
 	 padding-right: 20px;
-	 padding-left: 20px;	
+	 padding-left: 20px;
 	}
-	
+
 	.navbar-inner h1.brand {
 		margin-left:20px;
 	}
-	
+
 	.navbar-inner .btn-navbar {
 		margin:20px 20px 0;
 	}
-	
+
 	.container {
 	 padding-right: 20px;
 	 padding-left: 20px;
-	}	
+	}
 	.navbar-inverse .navbar-inner {
 		padding:0 20px 30px;
 	}
-	
+
 	.nav-collapse {
 		text-align:center;
 		width:100%;
@@ -1637,7 +1790,7 @@ i.icon-white {
 		width: 25%;
 	}
 }
-    
+
     /* Smaller screens ----------- */
 @media (max-width : 480px) {
 	#header-wrapper {
@@ -1657,7 +1810,7 @@ i.icon-white {
 	}
 
 }
-    
+
     /* Smartphones (portrait and landscape) ----------- */
 @media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
 
@@ -1684,10 +1837,10 @@ i.icon-white {
  section#services h2, section#services ul {
  text-align: center;
 }
-		
+
 
 /* team */
-		
+
 #team .team-thumb {
  margin-right: auto;
  margin-left: auto;
@@ -1702,7 +1855,7 @@ i.icon-white {
  margin-left: auto;
  margin-right: auto;
 }
-		
+
 /* Contact Form */
 	#contact-form {
 		overflow: hidden;
